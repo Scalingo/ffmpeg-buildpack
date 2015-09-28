@@ -5,7 +5,7 @@ This project is a Scalingo [buildpack](http://doc.scalingo.com/buildpacks) for u
 
 It doesn't do anything else, you have to use it alongside another buildpack thanks to the [mutli-buildpack](https://github.com/Scalingo/multi-buildpack).
 
-This buildpack provides a static build of the 2.8 version of FFMPEG downloaded from https://www.ffmpeg.org/download.html
+This buildpack provides a static build of the 2.8 version of FFmpeg downloaded from https://www.ffmpeg.org/download.html
 
 Usage
 -----
@@ -19,7 +19,7 @@ https://github.com/Scalingo/ffmpeg-buildpack.git
 https://github.com/Scalingo/go-buildpack.git 
 ```
 
-The first buildpack will install FFMPEG, the second will handle the deployment of your go application. For any other technology,
+The first buildpack will install FFmpeg, the second will handle the deployment of your go application. For any other technology,
 go to [http://doc.scalingo.com/buildpacks/](http://doc.scalingo.com/buildpacks/)
 
 ## Setup your application configuration
