@@ -8,7 +8,8 @@ indent() {
 echo "-----> Install ffmpeg 2.8"
 BUILD_DIR=$1
 VENDOR_DIR="vendor"
-DOWNLOAD_URL="https://storage.sbg1.cloud.ovh.net/v1/AUTH_be65d32d71a6435589a419eac98613f2/binaries/ffmpeg-2.8.tar.gz"
+FFMPEG_VERSION=${FFMPEG_VERSION:-"2.8.6"}
+DOWNLOAD_URL="https://storage.sbg1.cloud.ovh.net/v1/AUTH_be65d32d71a6435589a419eac98613f2/binaries/ffmpeg-${FFMPEG_VERSION}-linux-amd64.tar.xz"
 
 echo "DOWNLOAD_URL = " $DOWNLOAD_URL | indent
 
