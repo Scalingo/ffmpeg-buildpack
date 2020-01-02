@@ -3,7 +3,7 @@ Buildpack for ffmpeg
 
 This project is a Scalingo [buildpack](http://doc.scalingo.com/buildpacks) for using [ffmpeg](http://www.ffmpeg.org/) in your project.
 
-It doesn't do anything else, you have to use it alongside another buildpack thanks to the [mutli-buildpack](https://github.com/Scalingo/multi-buildpack).
+It doesn't do anything else, you have to use it alongside another buildpack thanks to the [multi-buildpack](https://github.com/Scalingo/multi-buildpack).
 
 This buildpack provides a static build of the 2.8 version of FFmpeg downloaded from https://www.ffmpeg.org/download.html
 
