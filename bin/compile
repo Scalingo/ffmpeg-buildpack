@@ -14,13 +14,13 @@ mkdir -p $VENDOR_DIR
 cd $VENDOR_DIR
 
 echo "-----> Install ffmpeg ${FFMPEG_VERSION}"
-DOWNLOAD_URL="https://storage.sbg1.cloud.ovh.net/v1/AUTH_be65d32d71a6435589a419eac98613f2/binaries/ffmpeg-${FFMPEG_VERSION}-linux-amd64.tar.xz"
+DOWNLOAD_URL="https://storage.sbg.cloud.ovh.net/v1/AUTH_be65d32d71a6435589a419eac98613f2/binaries/ffmpeg-${FFMPEG_VERSION}-linux-amd64.tar.xz"
 echo "ffmpeg DOWNLOAD_URL = ${DOWNLOAD_URL}" | indent
 curl -L --silent $DOWNLOAD_URL | tar x
 
 if [ "x$WITH_FFPROBE" = "xtrue" ] ; then
   echo "-----> Install ffprobe ${FFMPEG_VERSION}"
-  DOWNLOAD_URL="https://storage.sbg1.cloud.ovh.net/v1/AUTH_be65d32d71a6435589a419eac98613f2/binaries/ffprobe-${FFMPEG_VERSION}-linux-amd64.tar.xz"
+  DOWNLOAD_URL="https://storage.sbg.cloud.ovh.net/v1/AUTH_be65d32d71a6435589a419eac98613f2/binaries/ffprobe-${FFMPEG_VERSION}-linux-amd64.tar.xz"
   echo "ffprobe DOWNLOAD_URL = ${DOWNLOAD_URL}" | indent
   curl -L --silent $DOWNLOAD_URL | tar x
 fi
