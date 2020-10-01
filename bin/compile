@@ -5,6 +5,7 @@ indent() {
   sed -u 's/^/       /'
 }
 
+BP_DIR=$(dirname $(readlink -f $0))
 BUILD_DIR=$1
 VENDOR_DIR="vendor"
 FFMPEG_VERSION=${FFMPEG_VERSION:-"2.8.6"}
@@ -29,3 +30,6 @@ echo "exporting PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/ffmpeg.sh"
 mkdir -p $(dirname $PROFILE_PATH)
 echo 'export PATH="/app/vendor/ffmpeg/bin:$PATH"' >> $PROFILE_PATH
+
+# For multi-buildpack support, add an export file
+echo 'export PATH="$BUILD_DIR/vendor/ffmpeg/bin:$PATH"' >> $BP_DIR/export
