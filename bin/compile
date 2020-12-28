@@ -1,11 +1,10 @@
-
 #!/bin/sh
 
 indent() {
   sed -u 's/^/       /'
 }
 
-BUILD_DIR=$2
+BUILD_DIR=$1
 BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
 VENDOR_DIR="vendor"
 FFMPEG_VERSION=${FFMPEG_VERSION:-"2.8.6"}
